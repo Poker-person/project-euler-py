@@ -10,10 +10,16 @@
 #print(sum(multiplos))
 
 # Encontre a soma dos numeros pares da sequencia de Fibonacci ate 4 milhoes
-
+x1 = 0
+x2 = 0
 fibonacci_par = []
 
-for i in range(0, 10):
-    fibonacci_par.append(i + (i ** i))
+for i in range(1, 4000000):
+    x2 = x2 + x1
+    x1 = x2 - x1
+    if x2 == 0:
+        x2 = x2 + 1
+    if x1 % 2 == 0:
+        fibonacci_par.append(x1)
 
-print(fibonacci_par)
+print(sum(fibonacci_par))
