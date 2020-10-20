@@ -34,7 +34,7 @@
 #            if (num % i) == 0:
 #                break
 #        else:
-#            if (13195 % num) == 0:
+#            if (600851475143 % num) == 0:
 #                res.append(num)
 
 #print("O maior fator primo de 600851475143 é", res[-1])
